@@ -1,0 +1,95 @@
+body{
+    background-color: whitesmoke; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+header, nav, .barra{
+    margin: -10px; /* margem para cobrir toda as laterais*/
+    width: 101.3%; /* largura pra cobrir toda as laterais tbm */
+    position: relative; /*  permite posicionar um elemento de forma relativa ao seu local original (ou do pai) na página.*/
+    display: flex; /* cria um container flexivel que permite organizar os filhos*/
+    align-items: center; /* alinha verticalmente */
+    justify-content: center; /* alinha horizontalmente */
+}
+
+header{
+    color:whitesmoke;    
+    height: 300px; /* largura */
+    font-size: 30px; /* tamanho da fonte */
+    background-color:#e79686;
+}
+header:hover{ /* é ativado quando o mouse está sobre*/
+    color:#555;
+}
+h1{
+    text-shadow: 0px 0px 5px #ceefe4; /* sombreia o texto horizontal, vertical, dissipação*/
+}
+
+nav{
+	background-color: #e79686;
+	height: 40px; 
+    padding: 15px 0px; /* adiciona um espaço no elemento, não alterando seu tamanho externo*/
+}
+nav ul {
+	list-style-type: none; /* tira os marcadore, bolinhas, da listagem*/
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	float: left; /*alinha horizontalmente um elemento em relação ao seu contêiner, assim outros elementos fluam em torno dele.*/
+}
+nav ul li a {
+	display: block; /* faz o elemento ocupar toda a largura disponivel do contêiner*/
+	color: whitesmoke;
+	padding: 17px 45px;
+	text-decoration: none; /* tira o efeito do texto, como o sobrinhado*/
+    font-size: 16px;
+}
+nav ul li a:hover {
+	background-color: whitesmoke;
+    color:  black;
+    box-shadow: 0px 0px 10px  #ceefe4; /* adiciona sombra na div, horizontal, vertical, intensidade */
+}
+.barra{
+    background-color:#555;
+    color: white;
+    font-size: 15px;
+}
+
+.container{
+    font-size: 18px;
+    text-align: justify; /* formata o texto */
+}
+
+.texto{
+    float: right; /*alinha horizontalmente um elemento em relação ao seu contêiner, assim outros elementos fluam em torno dele.*/
+    width: 50%;
+    transform: translate(-22%, 100px);  /* move o elemento baseado no seu local original, por meio do eixo X e Y*/
+}
+.texto img{
+    max-width: 180px; /* limita a largura da imagem */
+    height: auto;
+    border-radius: 10px; /* arredonda a borda */
+    display: block; /* faz o elemento ocupar toda a largura disponivel do contêiner*/
+    margin: 0 auto; /* centraliza a imagem dentro da div texto */
+    border: 2px solid #555; /*coloca borda: espessura, estilo, cor*/
+}
+
+h2{
+    color: #e79686;
+}
+
+.lateral{
+    float: left; /*alinha horizontalmente um elemento em relação ao seu contêiner, assim outros elementos fluam em torno dele.*/
+    width: 20%;
+    transform: translate(20%, 30%); /* move o elemento baseado no seu local original, por meio do eixo X e Y*/
+    padding: 20px ;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 10px;
+}
+.lateral img{
+    border: 2px solid #555;
+    border-radius: 100px;
+}
